@@ -2,7 +2,7 @@
 name = "chicago-crash-bot"
 version = "0.1.0"
 description = "ETL pipeline for Chicago traffic crash data with GIS enrichment"
-authors = ["Matt McLean"]
+authors = ["Michael McLean"]
 readme = "README.md"
 packages = [{include = "chicago_crash_bot", from = "src"}]
 
