@@ -1,0 +1,64 @@
+// src/templates/email/verification-template.mjml
+`<mjml>
+  <mj-head>
+    <mj-title>Verify Your Chicago Traffic Safety Subscription</mj-title>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+    <mj-attributes>
+      <mj-all font-family="Roboto, Arial, sans-serif" />
+      <mj-text font-weight="400" font-size="16px" color="#000000" line-height="24px" />
+      <mj-section padding="0px" />
+    </mj-attributes>
+    <mj-style>
+      .link-nostyle { color: inherit; text-decoration: none }
+      .footer-link { color: #2563EB; text-decoration: none }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#f8fafc">
+    <mj-section padding="20px 0">
+      <mj-column>
+        <mj-image src="https://via.placeholder.com/200x80.png?text=Chicago+Safety" alt="Chicago Traffic Safety" width="200px" padding="20px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="20px">
+      <mj-column>
+        <mj-text font-size="24px" font-weight="700" padding-bottom="20px">
+          Verify Your Email Address
+        </mj-text>
+        <mj-text>
+          Thank you for subscribing to Chicago Traffic Safety reports. To start receiving your reports, please verify your email address by clicking the button below.
+        </mj-text>
+
+        <mj-button background-color="#2563EB" color="white" font-size="18px" font-weight="500" border-radius="4px" href="{{verifyUrl}}" width="300px" padding="20px">
+          Verify My Email
+        </mj-button>
+
+        <mj-text font-size="14px" color="#64748b" padding-top="20px">
+          Or copy and paste this URL into your browser: 
+          <a href="{{verifyUrl}}" class="footer-link">{{verifyUrl}}</a>
+        </mj-text>
+
+        <mj-divider border-color="#e2e8f0" padding="20px 0" />
+
+        <mj-text>
+          You've signed up to receive regular traffic safety reports for Chicago roads. These reports will help you stay informed about crash patterns and trends.
+        </mj-text>
+
+        <mj-text>
+          If you did not sign up for this service, you can safely ignore this email.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f1f5f9" padding="20px">
+      <mj-column>
+        <mj-text font-size="14px" color="#64748b" align="center">
+          &copy; {{currentYear}} Chicago Traffic Safety Dashboard
+        </mj-text>
+        <mj-text font-size="14px" color="#64748b" align="center">
+          <a href="{{siteUrl}}" class="footer-link">Visit Dashboard</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>`
